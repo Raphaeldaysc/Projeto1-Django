@@ -106,15 +106,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# Add this to ensure Django looks for static files in additional locations
-STATICFILES_DIRS = [
-    BASE_DIR / 'static',
-    BASE_DIR / 'recipes' / 'static',
-]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = BASE_DIR / 'static'
